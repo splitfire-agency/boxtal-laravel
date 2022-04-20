@@ -1,11 +1,11 @@
 {
-    "name": "boxtale/php-library",
+    "name": "splitfire-agency/boxtal-laravel",
     "type": "library",
-    "description": "Boxtal PHP Library for Envoimoinscher/Boxtal API v1",
-    "homepage": "https://github.com/boxtal/php-library",
+    "description": "Boxtal PHP Laravel Library for Envoimoinscher/Boxtal API v1",
+    "homepage": "https://github.com/splitfire-agency/boxtal-laravel",
     "license": "Unlicense",
     "minimum-stability": "dev",
-    "keywords": ["envoimoinscher", "boxtal", "php", "emc", "class", "api", "library"],
+    "keywords": ["laravel", "envoimoinscher", "boxtal", "php", "emc", "class", "api", "library"],
     "authors": [
         {
             "name": "Boxtal Support",
@@ -13,9 +13,25 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=8.0.0",
+        "laravel/framework": "^8.0",
+        "ext-curl":  "*",
+        "ext-libxml": "*",
+        "ext-openssl": "*"
     },
     "autoload": {
-        "files": ["config/autoload.php"]
+        "psr-4": {
+            "Emc\\Tests\\": "tests/",
+            "Emc\\": "src/"
+        }
+    },
+    "laravel": {
+        "providers": [
+            "Sf\\Boxtal\\Providers\\PayboxServiceProvider"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev",
+        "orchestra/testbench": "^6.24"
     }
 }

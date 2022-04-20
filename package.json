@@ -1,0 +1,23 @@
+{
+  "name": "boxtal-laravel",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PHP Laravel implementation of the EnvoiMoinsCher.com API",
+  "scripts": {
+    "lint": "prettier --write 'src/**/*.php' 'config/**/*.php' 'tests/**/*.php'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splitfire-agency/boxtal-laravel.git"
+  },
+  "author": "splitfire",
+  "bugs": {
+    "url": "https://github.com/splitfire-agency/boxtal-laravel/issues"
+  },
+  "homepage": "https://github.com/splitfire-agency/boxtal-laravel#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.18.2",
+    "prettier": "^2.1.2"
+  },
+  "dependencies": {}
+}
