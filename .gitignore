@@ -1,4 +1,7 @@
 composer.lock
 .git
 vendor
+node_modules
 config/environment.php
+.idea
+.phpunit.result.cache

@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  api:
+    image: splitfire/docker-php-laravel:release-8.0.6
+    container_name: boxtal-api
+    volumes:
+      - .:/var/www/
+    environment:
+      - "HOME=/tmp"
+    networks:
+      - boxtal
+
+networks:
+  boxtal:
+    driver: bridge

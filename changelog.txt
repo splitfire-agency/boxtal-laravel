@@ -1,3 +1,8 @@
+Release 2.0.0 20/04/2022
+ - Refactor lib for laravel >= 8.0 and php >= 8.0
+ - Added phpunit tests
+ - Added linter
+
 Release 1.3.6 24/05/2017
  - [AD] #4116 added document download function & sample
  - [AD] #4096 added carrier cgv iframe
